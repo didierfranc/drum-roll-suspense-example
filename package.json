@@ -1,0 +1,29 @@
+{
+  "name": "suspense",
+  "version": "1.0.0",
+  "description": "🥁",
+  "author": "Didier Franc <didierfranc@me.com>",
+  "main": "src/index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-class-properties": "^7.0.0-beta.40",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/preset-react": "^7.0.0-beta.40",
+    "babel-loader": "^8.0.0-beta.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-serve": "^0.2.0"
+  },
+  "scripts": {
+    "build": "webpack-cli --config *.prod.js; cp index.html dist/",
+    "start": "webpack-serve --config *.dev.js"
+  },
+  "dependencies": {
+    "drum-roll": "^1.0.0-beta.2",
+    "react": "^16.4.0-alpha.0911da3",
+    "react-dom": "^16.4.0-alpha.0911da3",
+    "simple-cache-provider": "^0.3.0-alpha.0911da3"
+  }
+}
